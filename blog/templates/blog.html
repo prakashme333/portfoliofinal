@@ -23,7 +23,8 @@
          <div class="card">
             <h2 class='blogtitle'>{{ data.title|truncatechars:35 }}</h2>
             <P class='text-muted text-muted2'>-- {{ data.date|date:'d M Y D' }} --</P>
-            <P class='margin-top-p'>{{ data.description|striptags|truncatechars:50 }}</P>            </div>
+            <P class='margin-top-p'>{{ data.description|striptags|truncatechars:50 }}</P>           
+         </div>
       </a>
    {% endfor %}
 </div>

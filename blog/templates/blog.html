@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{% static 'css/styleblog.css' %}">
+   <title>Blog</title>
+</head>
+<body>
+<div class="max-width" style="margin-right:80px;">
+   <div class="logo" style="margin-top:30px">
+      <a href="{% url 'homepage' %}">Portfolio</a>
+   </div>
+</div>
+<div class="forblog">
+   <div class="max-width">
+   <h1>Welcome to My Blog</h1>
+   </div>
+   {% for data in post %}
+      <a href="{% url 'detail' data.id %}">
+         <div class="card">
+            <h2 class='blogtitle'>{{ data.title|truncatechars:35 }}</h2>
+            <P class='text-muted text-muted2'>-- {{ data.date|date:'d M Y D' }} --</P>
+            <P class='margin-top-p'>{{ data.description|striptags|truncatechars:50 }}</P>            </div>
+      </a>
+   {% endfor %}
+</div>
+  <div class="footer">
+         <footer>
+            <span>Created By Prakash Subedi</span> | <span class="far fa-copyright"></span><span>2021 All rights reserved.</span>
+        </footer>
+    </div>
+
+</body>
+</html>

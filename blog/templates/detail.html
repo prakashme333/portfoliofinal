@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{% static 'css/styleblog.css' %}">
+   <title>Blog</title>
+</head>
+<body>
+<div class="max-width" style="margin-right:80px;">
+   <div class="logo" style="margin-top:30px;">
+      <a href="{% url 'homepage' %}">Portfolio</a>
+   </div>
+</div>
+   <div class="forblog">
+      <div class="max-width">
+      <h1>{{ post.title }}</h1>
+      <h4 class='text-muted'>-- {{ post.date|date:'d M Y D' }} --</h4>
+      <P class="fordetailtext">{{ post.description|safe }}</P>
+      </div>
+   </div> 
+    <div class="footer">
+         <footer>
+            <span>Created By Prakash Subedi</span> | <span class="far fa-copyright"></span><span>2021 All rights reserved.</span>
+        </footer>
+    </div>
+</body>
+</html>

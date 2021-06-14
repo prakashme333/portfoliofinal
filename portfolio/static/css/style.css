@@ -288,7 +288,7 @@ section .title::after{
 .services .serv-content .card{
    width: calc(33% - 20px);
    background: none;
-   height: 290px;
+   height: 300px;
    text-align: center;
    border: 1px solid white;
    border-radius: 6px;

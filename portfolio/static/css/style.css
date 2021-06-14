@@ -10,13 +10,13 @@
 }
 html{
    scroll-behavior:smooth;
-   
+
 }
 .max-width{
    max-width: 1300px;
    padding: 0 80px;
    margin: auto;
-    
+
 }
 
 .navbar{
@@ -79,7 +79,7 @@ html{
    font-size: 23px;
    cursor: pointer;
    display: none;
-   
+
 }
 .scroll-up-btn{
    position: fixed;
@@ -171,7 +171,7 @@ section{
 }
 section .title{
    position: relative;
-   text-align: center;  
+   text-align: center;
    font-size: 40px;
    font-weight: 500;
    margin-bottom: 60px;
@@ -349,7 +349,7 @@ section .title::after{
 
 /* skills section styling */
 .skills .title::after{
-   content: "What I know"; 
+   content: "What I know";
 }
 .skills .skills-content .column{
    width: calc(50% - 30px);
@@ -415,7 +415,7 @@ section .title::after{
 }
 .contact .title::after{
    background: rgb(88, 88, 196);
-   content: "Get in touch"; 
+   content: "Get in touch";
 }
 .contact .contact-content .column{
    width: calc(50% - 30px);
@@ -442,7 +442,7 @@ section .title::after{
    color: white;
 }
 .contact .contact-content .info .head{
-  font-weight: 600; 
+  font-weight: 600;
 }
 .contact .contact-content .info .sub-title{
    color: rgb(184, 179, 179);
@@ -543,7 +543,7 @@ footer{
    background: rgb(49, 49, 110);
    padding: 20px 23px;
    color: #fff;
-   
+
 }
 
 
@@ -554,7 +554,7 @@ footer{
    .home .max-width{
       margin-left: 0px;
    }
-  
+
 }
 
 
@@ -567,6 +567,18 @@ footer{
       width: 350px;
   }
 
+}
+@media (max-width:1200px){
+   .services .serv-content .card{
+      width: calc(50% - 75px);
+      margin-bottom: 20px;
+   }
+}
+@media (max-width:1000px){
+   .services .serv-content .card{
+      width: calc(50% - 50px);
+      margin-bottom: 20px;
+   }
 }
 
 @media (max-width: 991px){
@@ -638,9 +650,14 @@ footer{
   }
   .contact .contact-content .column{
      width: 100%;
-     
+
   }
-  
+
+}
+@media (max-width:800px){
+    .services .serv-content .card{
+        width:100%;
+    }
 }
 
 @media (max-width: 690px){
@@ -656,10 +673,8 @@ footer{
    .home .home-content a{
       font-size: 20px;
   }
-  .services .serv-content .card{
-   width: 100%;
-   }
-  
+
+
 }
 
 @media (max-width: 500px){

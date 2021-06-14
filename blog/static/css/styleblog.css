@@ -38,6 +38,21 @@ body{
    -ms-border-radius: 15px;
    -o-border-radius: 15px;
 }
+.forblog2{
+   background-color: rgb(208, 208, 236);
+   margin-left: 80px;
+   margin-right: 80px;
+   margin-top: 30px;
+   margin-bottom: 80px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   height: 100%;
+   opacity: 1;
+   box-shadow: 5px 10px 18px #888888;
+   border-top-left-radius: 125px;
+   border-bottom-right-radius: 125px;
+}
+
 a{
    color:black
 }
